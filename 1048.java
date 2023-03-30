@@ -1,10 +1,11 @@
-public class SomaDigitosRecursivo {
+import java.util.Scanner;
+
+public class 1048 {
 
     public static void main(String[] args) {
         float salin;
         double salfin = 0, perc = 0, rea = 0;
         Scanner ler = new Scanner(System.in);
-        System.out.println("informe o salario inicial");
         salin = ler.nextFloat();
         if (salin < 400.0) {
             perc = 15;
@@ -30,8 +31,8 @@ public class SomaDigitosRecursivo {
         }
 
 
-        System.out.printf("Novo salario: " + salfin);
-        System.out.printf("Reajuste ganho: " + rea);
-        System.out.printf("Em percentual: " + perc + "%");
+        System.out.println("Novo salario: " + salfin);
+        System.out.println("Reajuste ganho: " + rea);
+        System.out.println("Em percentual: " + String.valueOf(perc) + "%");
     }
 }
