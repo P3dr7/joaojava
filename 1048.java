@@ -1,40 +1,37 @@
-public class 1048{
-    import java.util.Scanner;
+public class SomaDigitosRecursivo {
+
     public static void main(String[] args) {
-    float salin;
-    int salfin = 0, perc = 0, rea = 0;
-    Scanner ler =  new Scanner;
-    System.out.println(“Informe o Salário inicial”);
-    salin = ler.nextDouble();
-    switch (salin){
-        case (salin < 400){
+        float salin;
+        double salfin = 0, perc = 0, rea = 0;
+        Scanner ler = new Scanner();
+        System.out.println("informe o salario inicial");
+        salin = ler.nextFloat();
+        if (salin < 400.0) {
             perc = 15;
-            salin * 0.15 = rea;
+            rea = salin * 0.15;
             salfin = salin + rea;
-        }
-        case (salin > 400 && salin < 800){
+        } else if (salin > 400 && salin < 800) {
             perc = 12;
-            salin * 0.12 = rea;
+            rea = salin * 0.12;
             salfin = salin + rea;
-        }
-        case (salin > 800 && salin < 1200){
+
+        } else if (salin > 800 && salin < 1200) {
             perc = 10;
-            salin * 0.10 = rea;
+            rea = salin * 0.10;
             salfin = salin + rea;
-        }
-        case (salin > 1200 && salin < 1800){
+        } else if (salin > 1200 && salin < 1800) {
             perc = 7;
-            salin * 0.07 = rea;
+            rea = salin * 0.07;
             salfin = salin + rea;
-        }
-        case (salin > 1800){
+        } else if (salin > 1800) {
             perc = 4;
-            salin * 0.04 = rea;
+            rea = salin * 0.04;
             salfin = salin + rea;
         }
-        }
+
+
         System.out.printf("Novo salario: " + salfin);
         System.out.printf("Reajuste ganho: " + rea);
         System.out.printf("Em percentual: " + perc + "%");
-    } 
+    }
 }
