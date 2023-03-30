@@ -3,7 +3,7 @@ public class SomaDigitosRecursivo {
     public static void main(String[] args) {
         float salin;
         double salfin = 0, perc = 0, rea = 0;
-        Scanner ler = new Scanner();
+        Scanner ler = new Scanner(System.in);
         System.out.println("informe o salario inicial");
         salin = ler.nextFloat();
         if (salin < 400.0) {
