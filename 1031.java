@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class quarto {
+public class Main {
     public static int remaining(int n, int k) {
         int r = 0;
         for (int i = 1; i < n; i++)
