@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class quinto {
+public class Main {
     public static void main(String[] args) {
         int[] vetor = new int[5];
         int contador1 = 0, contador2 = 0, contador3 = 0;
