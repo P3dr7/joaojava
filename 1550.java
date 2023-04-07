@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Inversion {
+public class Main {
     static int a, b;
     static int[] d = new int[100010];
     public static void main(String[] args) {
